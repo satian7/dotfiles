@@ -1,5 +1,0 @@
-2020/07/19-12:45:51.026 11f7 Reusing MANIFEST /home/satian/.config/google-chrome/Profile 1/IndexedDB/https_wiki.josephhyatt.com_0.indexeddb.leveldb/MANIFEST-000001
-2020/07/19-12:45:59.581 77a Level-0 table #5: started
-2020/07/19-12:45:59.584 77a Level-0 table #5: 1157 bytes OK
-2020/07/19-12:45:59.591 77a Delete type=0 #3
-2020/07/19-12:45:59.592 77a Manual compaction at level-0 from (begin) .. (end); will stop at (end)

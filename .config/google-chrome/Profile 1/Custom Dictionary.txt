@@ -1,2 +1,0 @@
-Annalect
-checksum_v1 = 0939e0abf38e467b2549d3ba14959493

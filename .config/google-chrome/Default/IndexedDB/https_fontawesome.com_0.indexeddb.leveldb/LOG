@@ -1,5 +1,0 @@
-2020/07/18-19:12:02.064 c83 Reusing MANIFEST /home/satian/.config/google-chrome/Default/IndexedDB/https_fontawesome.com_0.indexeddb.leveldb/MANIFEST-000001
-2020/07/18-19:12:12.124 dea Level-0 table #5: started
-2020/07/18-19:12:12.128 dea Level-0 table #5: 1743 bytes OK
-2020/07/18-19:12:12.134 dea Delete type=0 #3
-2020/07/18-19:12:12.135 dea Manual compaction at level-0 from (begin) .. (end); will stop at (end)

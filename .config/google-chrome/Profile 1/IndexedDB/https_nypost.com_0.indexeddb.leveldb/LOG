@@ -1,5 +1,0 @@
-2020/07/15-21:43:26.757 56d9 Reusing MANIFEST /home/satian/.config/google-chrome/Profile 1/IndexedDB/https_nypost.com_0.indexeddb.leveldb/MANIFEST-000001
-2020/07/15-21:43:59.101 5aad Level-0 table #5: started
-2020/07/15-21:43:59.112 5aad Level-0 table #5: 1586 bytes OK
-2020/07/15-21:43:59.118 5aad Delete type=0 #3
-2020/07/15-21:43:59.118 5aad Manual compaction at level-0 from (begin) .. (end); will stop at (end)

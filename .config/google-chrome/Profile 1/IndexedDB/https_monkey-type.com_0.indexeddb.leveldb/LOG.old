@@ -1,5 +1,0 @@
-2020/07/16-18:58:56.535 af7 Reusing MANIFEST /home/satian/.config/google-chrome/Profile 1/IndexedDB/https_monkey-type.com_0.indexeddb.leveldb/MANIFEST-000001
-2020/07/16-18:59:37.680 b41 Level-0 table #5: started
-2020/07/16-18:59:37.683 b41 Level-0 table #5: 2779 bytes OK
-2020/07/16-18:59:37.687 b41 Delete type=0 #3
-2020/07/16-18:59:37.687 b41 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

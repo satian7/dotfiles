@@ -1,6 +1,0 @@
-2020/07/19-15:30:45.878 336e Reusing MANIFEST /home/satian/.config/google-chrome/Default/Sync Data/LevelDB/MANIFEST-000001
-2020/07/19-15:30:45.878 336e Recovering log #31
-2020/07/19-15:30:45.880 336e Reusing old log /home/satian/.config/google-chrome/Default/Sync Data/LevelDB/000031.log 
-2020/07/19-15:35:36.509 332f Level-0 table #36: started
-2020/07/19-15:35:36.521 332f Level-0 table #36: 102724 bytes OK
-2020/07/19-15:35:36.527 332f Delete type=0 #31

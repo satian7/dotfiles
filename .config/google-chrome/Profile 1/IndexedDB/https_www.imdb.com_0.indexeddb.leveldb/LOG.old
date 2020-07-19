@@ -1,5 +1,0 @@
-2020/07/17-20:30:22.788 34b Reusing MANIFEST /home/satian/.config/google-chrome/Profile 1/IndexedDB/https_www.imdb.com_0.indexeddb.leveldb/MANIFEST-000001
-2020/07/17-20:30:36.048 60e Level-0 table #5: started
-2020/07/17-20:30:36.054 60e Level-0 table #5: 1554 bytes OK
-2020/07/17-20:30:36.061 60e Delete type=0 #3
-2020/07/17-20:30:36.061 60e Manual compaction at level-0 from (begin) .. (end); will stop at (end)
