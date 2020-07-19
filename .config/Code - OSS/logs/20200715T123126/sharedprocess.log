@@ -1,3 +1,0 @@
-[2020-07-15 12:31:30.436] [sharedprocess] [info] main {"machineId":"be5f9401adb727a191003c1b7fba0e2f36814abeea72781535da081784377f01","windowId":2}
-[2020-07-15 12:31:30.453] [sharedprocess] [error] [File Watcher (node.js)] Error: ENOENT: no such file or directory, stat '/home/satian/.config/Code - OSS/User/snippets'
-[2020-07-15 12:32:10.447] [sharedprocess] [info] Starting to clean up unused language packs.
