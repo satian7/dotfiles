@@ -1,0 +1,92 @@
+#define base00 #2e3440
+#define base01 #3b4252
+#define base02 #434c5e
+#define base03 #4c566a
+#define base04 #9fabad
+#define base05 #e5e9f0
+#define base06 #eceff4
+#define base07 #8fbcbb
+#define base08 #88c0d0
+#define base09 #81a1c1
+#define base0A #5e81ac
+#define base0B #bf616a
+#define base0C #d08770
+#define base0D #ebcb8b
+#define base0E #a3be8c
+#define base0F #b48ead
+
+
+*foreground:   base04       
+*background:   base00
+*cursorColor:  base04
+*fading:       35
+*fadeColor:    base03
+
+*lighterbg:    base01
+*separator:    base01
+*selection:    base0B
+
+*color0:       base01
+*color1:       base0B
+*color2:       base0E
+*color3:       base0D
+*color4:       base09
+*color5:       base0F
+*color6:       base08
+*color7:       base05
+
+*color8:       base03
+*color9:       base11
+*color10:      base14
+*color11:      base13
+*color12:      base09
+*color13:      base15
+*color14:      base07
+*color15:      base06
+
+! Rofi
+rofi.font: monospace 12
+rofi.padding: 20
+rofi.line-padding: 2
+rofi.color-enabled: true
+rofi.hide-scrollbar: true
+rofi.separator-style: solid
+rofi.color-window: #1c2023, #919ba0, #1c2023
+rofi.color-normal: #1c2023, #919ba0, #1c2023, #a4a4a4, #1c2023
+rofi.color-urgent: argb:00000000, #f43753, argb:00000000, argb:00000000, #e29a49
+rofi.color-active: argb:00000000, #49bbfb, argb:00000000, argb:00000000, #e29a49
+rofi.kb-cancel: Escape,Alt+F1
+
+! xterm
+xterm*termName: xterm-256color
+xterm*font: monospace
+xterm*faceName: monospace:size=11
+xterm*loginShell: true
+xterm*vt100*geometry: 90x34
+xterm*saveLines: 2000
+xterm*charClass: 33:48,35:48,37:48,43:48,45-47:48,64:48,95:48,126:48
+xterm*eightBitInput: false
+
+! URxvt
+URxvt*saveline: 15000
+URxvt*termName: rxvt-256color
+URxvt*iso14755: false
+URxvt*depth: 32
+URxvt*background: [95]#1C2023
+URxvt*scrollBar: false
+URxvt*scrollBar_right: false
+URxvt*internalBorder: 0
+URxvt*externalBorder: 0
+URxvt*letterSpace: -1
+URxvt.font: xft:monospace:size=11
+URxvt.copyCommand: xclip -i -selection clipboard
+URxvt.pasteCommand: xclip -o -selection clipboard
+URxvt.urlLauncher: exo-open
+URxvt.underlineURLs: true
+URxvt.urlButton: 1
+URxvt.geometry: 90x34
+URxvt.tabbed.tabbar-fg: 4
+URxvt.tabbed.tabbar-bg: 16
+URxvt.tabbed.tab-fg: 15
+URxvt.tabbed.tab-bg: 4
+URxvt*buffered: false
