@@ -1,0 +1,18 @@
+{
+   "DefaultMessage": {
+      "description": "The default message shown in the browserAction popup",
+      "message": "CurlWget needs first the download window to be initiated (i.e.:download something first)"
+   },
+   "contextHelpMessage": {
+      "description": "The default message shown in the browserAction popup",
+      "message": "Click this text to select then copy and paste it into the commandline window. (If command line is Microsoft Windows cmd.exe then replace all apostrophes with double quotes!)"
+   },
+   "extensionDescription": {
+      "description": "The description of the extension",
+      "message": "Builds a command line for 'curl/wget' tools to enable the download of data on a console only session."
+   },
+   "extensionName": {
+      "description": "The name of the extension",
+      "message": "CurlWget"
+   }
+}

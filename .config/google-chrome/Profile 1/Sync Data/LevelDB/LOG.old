@@ -1,0 +1,9 @@
+2020/07/19-12:11:51.200 954 Reusing MANIFEST /home/satian/.config/google-chrome/Profile 1/Sync Data/LevelDB/MANIFEST-000001
+2020/07/19-12:11:51.203 954 Recovering log #23
+2020/07/19-12:11:51.207 954 Reusing old log /home/satian/.config/google-chrome/Profile 1/Sync Data/LevelDB/000023.log 
+2020/07/19-12:46:37.296 796 Level-0 table #27: started
+2020/07/19-12:46:37.310 796 Level-0 table #27: 102048 bytes OK
+2020/07/19-12:46:37.315 796 Delete type=0 #23
+2020/07/19-13:55:25.121 796 Level-0 table #29: started
+2020/07/19-13:55:25.127 796 Level-0 table #29: 123917 bytes OK
+2020/07/19-13:55:25.136 796 Delete type=0 #26

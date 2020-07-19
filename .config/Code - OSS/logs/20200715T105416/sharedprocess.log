@@ -1,0 +1,45 @@
+[2020-07-15 10:54:20.007] [sharedprocess] [info] main {"machineId":"be5f9401adb727a191003c1b7fba0e2f36814abeea72781535da081784377f01","windowId":2}
+[2020-07-15 10:54:20.029] [sharedprocess] [error] [File Watcher (node.js)] Error: ENOENT: no such file or directory, stat '/home/satian/.config/Code - OSS/User/snippets'
+[2020-07-15 10:54:28.840] [sharedprocess] [info] Installing extension: arcticicestudio.nord-visual-studio-code
+[2020-07-15 10:54:29.350] [sharedprocess] [info] Downloaded extension: arcticicestudio.nord-visual-studio-code /home/satian/.config/Code - OSS/CachedExtensionVSIXs/arcticicestudio.nord-visual-studio-code-0.14.0
+[2020-07-15 10:54:29.440] [sharedprocess] [info] Extracted extension to /home/satian/.vscode-oss/extensions/.arcticicestudio.nord-visual-studio-code-0.14.0: arcticicestudio.nord-visual-studio-code
+[2020-07-15 10:54:29.440] [sharedprocess] [info] Renamed to /home/satian/.vscode-oss/extensions/arcticicestudio.nord-visual-studio-code-0.14.0
+[2020-07-15 10:54:29.443] [sharedprocess] [info] Installation completed. arcticicestudio.nord-visual-studio-code
+[2020-07-15 10:54:29.452] [sharedprocess] [info] Extensions installed successfully: arcticicestudio.nord-visual-studio-code
+[2020-07-15 10:54:54.107] [sharedprocess] [info] Installing extension: ms-python.anaconda-extension-pack
+[2020-07-15 10:54:54.498] [sharedprocess] [info] Downloaded extension: ms-python.anaconda-extension-pack /home/satian/.config/Code - OSS/CachedExtensionVSIXs/ms-python.anaconda-extension-pack-1.0.1
+[2020-07-15 10:54:54.563] [sharedprocess] [info] Extracted extension to /home/satian/.vscode-oss/extensions/.ms-python.anaconda-extension-pack-1.0.1: ms-python.anaconda-extension-pack
+[2020-07-15 10:54:54.564] [sharedprocess] [info] Renamed to /home/satian/.vscode-oss/extensions/ms-python.anaconda-extension-pack-1.0.1
+[2020-07-15 10:54:54.567] [sharedprocess] [info] Installation completed. ms-python.anaconda-extension-pack
+[2020-07-15 10:54:55.554] [sharedprocess] [info] Installing extension: ms-python.python
+[2020-07-15 10:54:55.557] [sharedprocess] [info] Installing extension: redhat.vscode-yaml
+[2020-07-15 10:54:56.521] [sharedprocess] [info] Downloaded extension: redhat.vscode-yaml /home/satian/.config/Code - OSS/CachedExtensionVSIXs/redhat.vscode-yaml-0.8.0
+[2020-07-15 10:54:58.022] [sharedprocess] [info] Downloaded extension: ms-python.python /home/satian/.config/Code - OSS/CachedExtensionVSIXs/ms-python.python-2020.6.91350
+[2020-07-15 10:55:00.023] [sharedprocess] [info] Starting to clean up unused language packs.
+[2020-07-15 10:55:02.224] [sharedprocess] [info] Extracted extension to /home/satian/.vscode-oss/extensions/.redhat.vscode-yaml-0.8.0: redhat.vscode-yaml
+[2020-07-15 10:55:02.226] [sharedprocess] [info] Renamed to /home/satian/.vscode-oss/extensions/redhat.vscode-yaml-0.8.0
+[2020-07-15 10:55:02.228] [sharedprocess] [info] Installation completed. redhat.vscode-yaml
+[2020-07-15 10:55:02.246] [sharedprocess] [info] Extensions installed successfully: redhat.vscode-yaml
+[2020-07-15 10:55:11.488] [sharedprocess] [info] Extracted extension to /home/satian/.vscode-oss/extensions/.ms-python.python-2020.6.91350: ms-python.python
+[2020-07-15 10:55:11.488] [sharedprocess] [info] Renamed to /home/satian/.vscode-oss/extensions/ms-python.python-2020.6.91350
+[2020-07-15 10:55:11.502] [sharedprocess] [info] Installation completed. ms-python.python
+[2020-07-15 10:55:11.517] [sharedprocess] [info] Extensions installed successfully: ms-python.python
+[2020-07-15 10:55:11.522] [sharedprocess] [info] Extensions installed successfully: ms-python.anaconda-extension-pack
+[2020-07-15 10:56:04.585] [sharedprocess] [info] Installing extension: coenraads.bracket-pair-colorizer-2
+[2020-07-15 10:56:05.006] [sharedprocess] [info] Downloaded extension: coenraads.bracket-pair-colorizer-2 /home/satian/.config/Code - OSS/CachedExtensionVSIXs/coenraads.bracket-pair-colorizer-2-0.2.0
+[2020-07-15 10:56:05.517] [sharedprocess] [info] Extracted extension to /home/satian/.vscode-oss/extensions/.coenraads.bracket-pair-colorizer-2-0.2.0: coenraads.bracket-pair-colorizer-2
+[2020-07-15 10:56:05.517] [sharedprocess] [info] Renamed to /home/satian/.vscode-oss/extensions/coenraads.bracket-pair-colorizer-2-0.2.0
+[2020-07-15 10:56:05.521] [sharedprocess] [info] Installation completed. coenraads.bracket-pair-colorizer-2
+[2020-07-15 10:56:05.530] [sharedprocess] [info] Extensions installed successfully: coenraads.bracket-pair-colorizer-2
+[2020-07-15 10:56:19.474] [sharedprocess] [info] Installing extension: eamodio.gitlens
+[2020-07-15 10:56:20.009] [sharedprocess] [info] Downloaded extension: eamodio.gitlens /home/satian/.config/Code - OSS/CachedExtensionVSIXs/eamodio.gitlens-10.2.2
+[2020-07-15 10:56:21.514] [sharedprocess] [info] Extracted extension to /home/satian/.vscode-oss/extensions/.eamodio.gitlens-10.2.2: eamodio.gitlens
+[2020-07-15 10:56:21.515] [sharedprocess] [info] Renamed to /home/satian/.vscode-oss/extensions/eamodio.gitlens-10.2.2
+[2020-07-15 10:56:21.536] [sharedprocess] [info] Installation completed. eamodio.gitlens
+[2020-07-15 10:56:21.563] [sharedprocess] [info] Extensions installed successfully: eamodio.gitlens
+[2020-07-15 10:57:16.610] [sharedprocess] [info] Installing extension: sirtori.indenticator
+[2020-07-15 10:57:17.080] [sharedprocess] [info] Downloaded extension: sirtori.indenticator /home/satian/.config/Code - OSS/CachedExtensionVSIXs/sirtori.indenticator-0.6.0
+[2020-07-15 10:57:17.162] [sharedprocess] [info] Extracted extension to /home/satian/.vscode-oss/extensions/.sirtori.indenticator-0.6.0: sirtori.indenticator
+[2020-07-15 10:57:17.163] [sharedprocess] [info] Renamed to /home/satian/.vscode-oss/extensions/sirtori.indenticator-0.6.0
+[2020-07-15 10:57:17.170] [sharedprocess] [info] Installation completed. sirtori.indenticator
+[2020-07-15 10:57:17.182] [sharedprocess] [info] Extensions installed successfully: sirtori.indenticator

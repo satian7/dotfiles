@@ -1,0 +1,5 @@
+2020/07/18-12:56:04.445 1f5b Reusing MANIFEST /home/satian/.config/google-chrome/Profile 1/IndexedDB/https_www.nobroker.in_0.indexeddb.leveldb/MANIFEST-000001
+2020/07/18-12:56:07.106 117e Level-0 table #5: started
+2020/07/18-12:56:07.111 117e Level-0 table #5: 4158 bytes OK
+2020/07/18-12:56:07.117 117e Delete type=0 #3
+2020/07/18-12:56:07.117 117e Manual compaction at level-0 from (begin) .. (end); will stop at (end)

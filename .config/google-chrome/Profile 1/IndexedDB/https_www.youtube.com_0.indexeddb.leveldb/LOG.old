@@ -1,0 +1,8 @@
+2020/07/19-15:44:00.224 394f Reusing MANIFEST /home/satian/.config/google-chrome/Profile 1/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
+2020/07/19-15:44:00.224 394f Recovering log #28
+2020/07/19-15:44:00.224 394f Reusing old log /home/satian/.config/google-chrome/Profile 1/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/000028.log 
+2020/07/19-15:45:50.220 342c Level-0 table #32: started
+2020/07/19-15:45:50.220 342c Level-0 table #32: 0 bytes OK
+2020/07/19-15:45:50.225 342c Delete type=0 #28
+2020/07/19-15:45:50.225 342c Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2020/07/19-15:45:50.226 342c Manual compaction at level-1 from (begin) .. (end); will stop at (end)

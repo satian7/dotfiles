@@ -1,0 +1,18 @@
+2020/07/19-15:30:45.879 31ad Reusing MANIFEST /home/satian/.config/google-chrome/Default/Local Storage/leveldb/MANIFEST-000001
+2020/07/19-15:30:45.880 31ad Recovering log #46
+2020/07/19-15:30:45.880 31ad Reusing old log /home/satian/.config/google-chrome/Default/Local Storage/leveldb/000046.log 
+2020/07/19-16:12:51.941 3330 Level-0 table #50: started
+2020/07/19-16:12:51.950 3330 Level-0 table #50: 18682 bytes OK
+2020/07/19-16:12:51.955 3330 Delete type=0 #46
+2020/07/19-16:43:04.004 3330 Level-0 table #52: started
+2020/07/19-16:43:04.009 3330 Level-0 table #52: 14613 bytes OK
+2020/07/19-16:43:04.016 3330 Delete type=0 #49
+2020/07/19-16:43:04.017 3330 Compacting 4@0 + 1@1 files
+2020/07/19-16:43:04.027 3330 Generated table #53@0: 555 keys, 145076 bytes
+2020/07/19-16:43:04.027 3330 Compacted 4@0 + 1@1 files => 145076 bytes
+2020/07/19-16:43:04.031 3330 compacted to: files[ 0 1 1 0 0 0 0 ]
+2020/07/19-16:43:04.031 3330 Delete type=2 #47
+2020/07/19-16:43:04.031 3330 Delete type=2 #44
+2020/07/19-16:43:04.031 3330 Delete type=2 #41
+2020/07/19-16:43:04.031 3330 Delete type=2 #52
+2020/07/19-16:43:04.031 3330 Delete type=2 #50

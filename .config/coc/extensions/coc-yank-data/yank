@@ -1,0 +1,1070 @@
+6d06259a2b0a4b5cf6a73a10c1d7ea51|file:///home/satian/.config/bspwm/bspwmrc|15|1|v|sh
+	bspc config window_gap 12
+	bspc config border_width 2
+	
+	bspc config split_ratio 0.62
+	bspc config borderless_monocle true
+	bspc config gapless_monocle true
+	
+	bspc config pointer_modifier mod1
+	bspc config pointer_action1 move
+	bspc config pointer_action2 resize_side
+	bspc config pointer_action3 resize_corner
+a56dc193ea5acdf68088ffaf27da02a0|file:///home/satian/.zshrc|12|1|V|zsh
+	SPACESHIP_USER_SHOw=true
+639e76705bccde4573e75b2af13dd578|file:///home/satian/.zshrc|12|1|V|zsh
+	SPACESHIP_HOST_SHOW=true
+9fb780cc8c72e54a0987bb7f1b87bd2a|file:///home/satian/.config/polybar/launch.sh|1|1|v|sh
+	#!/usr/bin/sh
+	
+	# Terminate already running bar
+	killall -q polybar
+	
+	# Launch bar
+	#echo "---" | tee -a /tmp/polybar.log
+	#polybar --reload example >>/tmp/polybar.log 2>&1 &
+	polybar example &
+	
+	echo "Bars Launched..."
+	
+3caf103017c327cf81d816bd2be22807|file:///home/satian/.config/polybar/user_modules.ini|283|1|v|dosini
+	;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+15422f108318cca7b44a79a02231b65e|file:///home/satian/.config/polybar/config|183|1|v|dosini
+	[module/spotify]
+	type = custom/script
+	tail = true
+	format-prefix = "  "
+	format = <label>
+	exec = ~/.config/polybar/scripts/scroll_spotify_status.sh
+	
+	[module/spotify-prev]
+	type = custom/script
+	exec = echo "玲"
+	format = <label>
+	click-left = playerctl previous spotify
+	
+	[module/spotify-play-pause]
+	type = custom/ipc
+	hook-0 = echo ""
+	hook-1 = echo "契"
+	initial = 1
+	click-left = playerctl play-pause spotify
+	
+	[module/spotify-next]
+	type = custom/script
+	exec = echo "怜"
+	format = <label>
+	click-left = playerctl next spotify
+	
+4f22dd6e09e271eeaf370c1daf77fe1e|file:///home/satian/.config/polybar/config|57|1|v|dosini
+	font-3 = Font Awesome 5 Free Regular:size=10;4
+	font-4 = Font Awesome 5 Free Solid:size=10;4
+	font-5 = Font Awesome 5 Brands Regular:size=10;4
+	
+	
+b8338da543e2d99626a1ef037acf0fe5|file:///home/satian/.config/polybar/config|57|1|v|dosini
+	font-3 = FontAwesome5Free:style=Solid:size=10;1
+	font-4 = FontAwesome5Free:style=Regular:size=10;1
+	font-5 = FontAwesome5Brands:style=Regular:size=10;1
+	
+d8e410e304149a77102b585bdca75786|file:///home/satian/.config/polybar/config|55|1|v|dosini
+	font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
+	font-2 = siji:pixelsize=10;1
+	
+d773b473e6b105d2c137c9e9713e4942|file:///home/satian/.config/polybar/user_modules.ini|312|1|v|dosini
+	[module/spotify-prev]
+	type = custom/script
+	exec = echo "玲"
+	format = <label>
+	click-left = playerctl previous spotify
+	
+	[module/spotify-play-pause]
+	type = custom/ipc
+	hook-0 = echo ""
+	hook-1 = echo "契"
+	initial = 1
+	click-left = playerctl play-pause spotify
+	
+	[module/spotify-next]
+	type = custom/script
+	exec = echo "怜"
+	format = <label>
+	click-left = playerctl next spotify
+	
+054616d6dbcb75fdd3a60ded7f2fb3df|file:///home/satian/.config/polybar/user_modules.ini|306|1|v|dosini
+	type = custom/script
+	interval = true
+	format-prefix = "  "
+	format = <label>
+	exec = python ~/.config/polybar/scripts/spotify_status.py
+	
+	
+c9188bb4dddadef1d3b1a53e1f11e0ec|file:///home/satian/.config/polybar/user_modules.ini|305|1|v|dosini
+	[module/player-mpris-tail]
+	type = custom/script
+	exec = ~/.config/polybar/scripts/player-mpris-tail.py -f '{icon} {artist} - {title}'
+	tail = true
+	click-left = ~/.config/polybar/scripts/player-mpris-tail.py previous &
+	click-right = ~/.config/polybar/scripts/player-mpris-tail.py next &
+	click-middle = ~/.config/polybar/scripts/player-mpris-tail.py play-pause &
+	
+	
+4dac69b64b378e91efbb2ebc7fe2603e|file:///home/satian/.config/polybar/user_modules.ini|307|1|v|dosini
+	type = custom/script
+	exec = ~/.config/polybar/scripts/player-mpris-tail.py -f '{icon} {:artist:t18:{artist}:}{:artist: - :}{:t20:{title}:}  %{A1:~/polybar-scripts/player-mpris-tail.py previous:} ⏮ %{A} %{A1:~/polybar-scripts/player-mpris-tail.py play-pause:} {icon-reversed} %{A} %{A1:~/polybar-scripts/player-mpris-tail.py next:} ⏭ %{A}'
+	tail = true
+	
+a273e095ecc2b6b5ee3642acab97fe14|file:///home/satian/.config/polybar/scripts/player-mpris-simple.sh|1|1|v|sh
+	#!/bin/sh
+	
+	player_status=$(playerctl status 2> /dev/null)
+	
+	if [ "$player_status" = "Playing" ]; then
+	    echo "$(playerctl metadata artist) - $(playerctl metadata title)"
+	elif [ "$player_status" = "Paused" ]; then
+	    echo " $(playerctl metadata artist) - $(playerctl metadata title)"
+	else
+	    echo ""
+	fi
+	
+	
+6cd4e39091f9036df01732708c7995c2|file:///home/satian/.config/polybar/user_modules.ini|306|1|v|dosini
+	[module/player-mpris-tail]
+	type = custom/script
+	exec = ~/.config/polybar/scripts/player-mpris-simple.sh
+	interval = 1
+	click-left = playerctl play-pause
+	click-middle= playerctl next
+	click-right= playerctl previous
+	
+cfe107c6f15a3ea030580e84414fef92|file:///home/satian/.config/polybar/config|20|1|v|dosini
+	;background = ${xrdb:color0:#222}
+	background = #222
+	background-alt = #444
+	;foreground = ${xrdb:color7:#222}
+	foreground = #dfdfdf
+	foreground-alt = #555
+	primary = #ffb52a
+	secondary = #e60053
+	alert = #bd2c40
+	
+1a4a778fad5639ca16c583c57ee91722|file:///home/satian/.Xresources|6|1|v|xdefaults
+	*.color0:  #1c2023
+	*.color1:  #bf616a
+	*.color2:  #a3be8c
+	*.color3:  #ebcb8b
+	*.color4:  #8fa1b3
+	*.color5:  #b48ead
+	*.color6:  #96b5b4
+	*.color7:  #E1E1E1
+	*.color8:  #919ba0
+	*.color9:  #bf616a
+	*.color10: #a3be8c
+	*.color11: #ebcb8b
+	*.color12: #8fa1b3
+	*.color13: #b48ead
+	*.color14: #96b5b4
+	*.color15: #c0c5ce
+	
+fe382e0f13c5e3e71c2d06f475115d30|file:///home/satian/.Xresources|1|1|v|xdefaults
+	! Base colors
+	*.foreground:  #E1E1E1
+	*.background:  #1c2023
+	*.cursorColor: #778899
+	
+205648f275751851f5b5c1b44053d557|file:///home/satian/.config/polybar/config|19|1|v|dosini
+	[colors]
+	background = ${xrdb:background:#ff0000}
+	background2 = ${xrdb:lighterbg:#ff0000}
+	selection = ${xrdb:selection:#ff0000}
+	;foreground = ${xrdb:foreground:#ff0000}
+	foreground = #839496
+	separator = ${xrdb:separator:#ff0000}
+	lightfg = ${xrdb:color7:#ff0000}
+	shade2 = #434c5e
+	
+c488e29b459540f88b25b4d7c795cc20|file:///home/satian/.config/polybar/config|42|1|v|dosini
+	background = ${colors.background2}
+	f
+6ff973df31fb95c2b7f64d7eb4bc0dab|file:///home/satian/.config/polybar/config|42|1|V|dosini
+	oreground = ${colors.foreground}
+0077494833d8bb9178ba4c10e5ce87cf|file:///home/satian/.xprofile|16|1|V|sh
+	ksuperkey -e 'Super_L=Alt_L|F1' &
+5b582b2fcb55ba7814d636b6f2885454|file:///home/satian/.xprofile|16|1|V|sh
+	ksuperkey -e 'Super_R=Alt_L|F1' &
+5c4ebd26014dc379bddfa96ffd440b1b|file:///home/satian/.config/polybar/launch.sh|11|1|V|sh
+	polybar bar2 >>/tmp/polybar2.log 2>&1 &
+c2500ae28aa69585cd7600695b641225|file:///home/satian/.config/polybar/launch.sh|9|1|V|sh
+	echo "---" | tee -a /tmp/polybar1.log /tmp/polybar2.log
+320f05a5e7cda3b15cec61bdd76a1812|file:///home/satian/.config/polybar/launch.sh|9|9|v|sh
+	&
+	
+	echo
+a544d6ccb9c4529300d65abf92aa9182|file:///home/satian/.config/alacritty/alacritty.yml|238|1|v|yaml
+	# Selection colors
+	#
+	# Colors which should be used to draw the selection area. If selection
+	# background is unset, selection color will be the inverse of the cell colors.
+	# If only text is unset the cell text color will remain the same.
+	# selection:
+	# text: "0x292d3e"
+	# background: "0xbbc5ff"
+	
+	# Normal colors
+	# normal:
+	# black: "0x292d3e"
+	# red: "0xf07178"
+	# green: "0xc3e88d"
+	# yellow: "0xffcb6b"
+	# blue: "0x82aaff"
+	# magenta: "0xc792ea"
+	# cyan: "0x89ddff"
+	# white: "0xd0d0d0"
+	
+	# Bright colors
+	# bright:
+	# black: "0x434758"
+	# red: "0xff8b92"
+	# green: "0xddffa7"
+	# yellow: "0xffe585"
+	# blue: "0x9cc4ff"
+	# magenta: "0xe1acff"
+	# cyan: "0xa3f7ff"
+	# white: "0xffffff"
+	
+004e65acbcfe729a523a806f4fb31056|file:///home/satian/.zshrc|1|1|v|zsh
+	d# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+	# Initialization code that may require console input (password prompts, [y/n]
+	#
+8b0e18d13d96a27aef38ed28305d56cf|file:///home/satian/.zshrc|1|1|V|zsh
+	 confirmations, etc.) must go above this block; everything else may go below.
+698596d652483794750096bb74740243|file:///home/satian/.config/bspwm/bspwmrc|47|1|v|sh
+	bspc rule -a google-chrome -o desktop=^2
+	bspc rule -a code desktop='^3'
+	bspc rule -a spotify desktop='^4' focus=on
+5db36a272b99628008fcd7b1c44e4436|file:///home/satian/.config/polybar/config|77|1|v|dosinii
+	################################################################################
+	################################################################################
+	############                         MAINBAR-I3                     ############
+	################################################################################
+	################################################################################
+	
+	[bar/mainbar-i3]
+	;https://github.com/jaagr/polybar/wiki/Configuration
+	
+	monitor = ${env:MONITOR}
+	;monitor-fallback = HDMI1
+	monitor-strict = false
+	override-redirect = false
+	bottom = false
+	fixed-center = true
+	width = 100%
+	height = 20
+	;offset-x = 1%
+	;offset-y = 1%
+	
+	background = ${colors.background}
+	foreground = ${colors.foreground}
+	
+	; Background gradient (vertical steps)
+	;   background-[0-9]+ = #aarrggbb
+	;background-0 =
+	
+	radius = 0.0
+	line-size = 2
+	line-color = #000000
+	
+	border-size = 0
+	;border-left-size = 25
+	;border-right-size = 25
+	;border-top-size = 0
+	;border-bottom-size = 25
+	border-color = #000000
+	
+	padding-left = 1
+	padding-right = 1
+	
+	module-margin-left = 0
+	module-margin-right = 0
+	
+	;https://github.com/jaagr/polybar/wiki/Fonts
+	font-0 = "UbuntuMono Nerd Font:size=10;2"
+	font-1 = "UbuntuMono Nerd Font:size=16;3"
+	font-2 = "Font Awesome 5 Free:style=Regular:pixelsize=8;1"
+	font-3 = "Font Awesome 5 Free:style=Solid:pixelsize=8;1"
+	font-4 = "Font Awesome 5 Brands:pixelsize=8;1"
+	
+	modules-left = i3 xwindow
+	modules-center = 
+	modules-right = arrow1 networkspeedup networkspeeddown arrow2 memory2 arrow3 cpu2 arrow2 pavolume arrow3 arch-aur-updates arrow2 date
+	
+	separator = 
+	
+	;dim-value = 1.0
+	
+	tray-position = right
+	tray-detached = false
+	tray-maxsize = 20
+	tray-background = ${colors.background}
+	tray-offset-x = 0
+	tray-offset-y = 0
+	tray-padding = 4
+	tray-scale = 1.0
+	
+	#i3: Make the bar appear below windows
+	;wm-restack = i3
+	;override-redirect = true
+	
+	; Enable support for inter-process messaging
+	; See the Messaging wiki page for more details.
+	enable-ipc = true
+	
+	; Fallback click handlers that will be called if
+	; there's no matching module handler found.
+	click-left =
+	click-middle =
+	click-right =
+	scroll-up = i3wm-wsnext
+	scroll-down = i3wm-wsprev
+	double-click-left =
+	double-click-mddle =
+	double-click-right =
+	
+	; Requires polybar to be built with xcursor support (xcb-util-cursor)
+	; Possible values are:
+	; - default   : The default pointer as before, can also be an empty string (default)
+	; - pointer   : Typically in the form of a hand
+	; - ns-resize : Up and down arrows, can be used to indicate scrolling
+	cursor-click =
+	cursor-scroll =
+	
+	################################################################################
+	################################################################################
+	############                    MAINBAR-OPENBOX                     ############
+	################################################################################
+	################################################################################
+	
+	[bar/mainbar-openbox]
+	monitor = ${env:MONITOR}
+	;monitor-fallback = HDMI1
+	width = 100%
+	height = 30
+	;offset-x = 1%
+	;offset-y = 1%
+	radius = 0.0
+	fixed-center = true
+	bottom = false
+	separator = |
+	
+	background = ${colors.background}
+	foreground = ${colors.foreground}
+	
+	line-size = 2
+	line-color = #f00
+	
+	;border-size = 2
+	;border-left-size = 25
+	;border-right-size = 25
+	;border-top-size = 0
+	;border-bottom-size = 25
+	;border-color = #00000000
+	
+	padding-left = 1
+	padding-right = 1
+	
+	module-margin-left = 3
+	module-margin-right = 3
+	
+	; Enable support for inter-process messaging
+	; See the Messaging wiki page for more details.
+	enable-ipc = true
+	
+	;https://github.com/jaagr/polybar/wiki/Fonts
+	font-0 = "Noto Sans:size=10;0"
+	font-1 = "Font Awesome 5 Free:size=10;0"
+	font-2 = "Font Awesome 5 Free Solid:size=10;0"
+	font-3 = "Font Awesome 5 Brands:size=10;0"
+	
+	modules-left = ewmh xwindow
+	modules-center = release kernel
+	modules-right =  memory1 cpu1 date
+	
+	tray-detached = false
+	tray-offset-x = 0
+	tray-offset-y = 0
+	tray-position = right
+	tray-padding = 2
+	tray-maxsize = 20
+	tray-scale = 1.0
+	tray-background = ${colors.background}
+	
+	
+	
+	################################################################################
+	################################################################################
+	############                    MAINBAR-OPENBOX-EXTRA               ############
+	################################################################################
+	################################################################################
+	
+	[bar/mainbar-openbox-extra]
+	monitor = ${env:MONITOR}
+	;monitor-fallback = HDMI1
+	width = 100%
+	height = 30
+	;offset-x = 1%
+	;offset-y = 1%
+	radius = 0.0
+	fixed-center = true
+	bottom = true
+	separator = |
+	
+	background = ${colors.background}
+	foreground = ${colors.foreground}
+	
+	line-size = 2
+	line-color = #f00
+	
+	;border-size = 2
+	;border-left-size = 25
+	;border-right-size = 25
+	;border-top-size = 0
+	;border-bottom-size = 25
+	;border-color = #00000000
+	
+	padding-left = 1
+	padding-right = 1
+	
+	module-margin-left = 3
+	module-margin-right = 3
+	
+	; Enable support for inter-process messaging
+	; See the Messaging wiki page for more details.
+	enable-ipc = true
+	
+	;https://github.com/jaagr/polybar/wiki/Fonts
+	font-0 = "Noto Sans:size=10;0"
+	font-1 = "FontAwesome:size=10;0"
+	font-2 = "Noto Sans:size=10;0"
+	font-3 = "Noto Sans Mono:size=10;0"
+	
+	modules-left = spotify1
+	modules-center = networkspeedup networkspeeddown
+	modules-right =  filesystem
+	
+	tray-detached = false
+	tray-offset-x = 0
+	tray-offset-y = 0
+	tray-position = right
+	tray-padding = 2
+	tray-maxsize = 20
+	tray-scale = 1.0
+	tray-background = ${colors.background}
+	
+c1215c2f5166313a3a7cb65b392ad051|file:///home/satian/.config/polybar/config|146|1|v|dosinii
+	################################################################################
+	################################################################################
+	############                  MAINBAR-XMONAD                        ############
+	################################################################################
+	################################################################################
+	
+	[bar/mainbar-xmonad]
+	monitor = ${env:MONITOR}
+	;monitor-fallback = HDMI1
+	monitor-strict = false
+	override-redirect = false
+	width = 100%
+	height = 20
+	;offset-x = 1%
+	;offset-y = 1%
+	radius = 0.0
+	fixed-center = true
+	bottom = false
+	separator =
+	
+	background = ${colors.background}
+	foreground = ${colors.foreground}
+	
+	line-size = 2
+	line-color = #f00
+	
+	;border-size = 2
+	;border-left-size = 25
+	;border-right-size = 25
+	;border-top-size = 0
+	;border-bottom-size = 25
+	border-color = #00000000
+	
+	padding-left = 0
+	padding-right = 1
+	
+	module-margin-left = 0
+	module-margin-right = 0
+	
+	; Enable support for inter-process messaging
+	; See the Messaging wiki page for more details.
+	enable-ipc = true
+	
+	;https://github.com/jaagr/polybar/wiki/Fonts
+	font-0 = "UbuntuMono Nerd Font:size=10;2"
+	font-1 = "UbuntuMono Nerd Font:size=16;3"
+	font-2 = "Font Awesome 5 Free:style=Regular:pixelsize=8;1"
+	font-3 = "Font Awesome 5 Free:style=Solid:pixelsize=8;1"
+	font-4 = "Font Awesome 5 Brands:pixelsize=8;1"
+	
+	modules-left = xmonad
+	modules-center =
+	modules-right = arrow1 networkspeedup networkspeeddown arrow2 memory2 arrow3 cpu2 arrow2 pavolume arrow3 arch-aur-updates arrow2 date
+	
+	tray-detached = false
+	tray-offset-x = 0
+	tray-offset-y = 0
+	tray-padding = 2
+	tray-maxsize = 20
+	tray-scale = 1.0
+	tray-position = right
+	tray-background = ${colors.background}
+	
+	
+	################################################################################
+	################################################################################
+	############                  MAINBAR-XMONAD-EXTRA                  ############
+	################################################################################
+	################################################################################
+	
+	[bar/mainbar-xmonad-extra]
+	monitor = ${env:MONITOR}
+	;monitor-fallback = HDMI1
+	monitor-strict = false
+	override-redirect = false
+	width = 100%
+	height = 30
+	;offset-x = 1%
+	;offset-y = 1%
+	radius = 0.0
+	fixed-center = true
+	bottom = true
+	separator = |
+	
+	background = ${colors.background}
+	foreground = ${colors.foreground}
+	
+	line-size = 2
+	line-color = #f00
+	
+	;border-size = 2
+	;border-left-size = 25
+	;border-right-size = 25
+	border-top-size = 10
+	;border-bottom-size = 25
+	border-color = #00000000
+	
+	padding-left = 0
+	padding-right = 1
+	
+	module-margin-left = 3
+	module-margin-right = 3
+	
+	; Enable support for inter-process messaging
+	; See the Messaging wiki page for more details.
+	enable-ipc = true
+	
+	;https://github.com/jaagr/polybar/wiki/Fonts
+	font-0 = "Noto Sans:size=10;0"
+	font-1 = "FontAwesome:size=13;0"
+	font-2 = "Noto Sans:size=10;0"
+	font-3 = "Noto Sans Mono:size=10;0"
+	font-4 = "FontAwesome5Brands:size=13;0"
+	
+	modules-left = load-average
+	modules-center = networkspeeddown networkspeedup
+	modules-right = filesystem
+	
+	;tray-detached = false
+	;tray-offset-x = 0
+	;tray-offset-y = 0
+	;tray-padding = 2
+	;tray-maxsize = 20
+	;tray-scale = 1.0
+	;tray-position = right
+	;tray-background = ${colors.background}
+	
+	
+	
+036091d250c3d611e8f2ff0dfed586ba|file:///home/satian/.config/polybar/config|146|1|v|dosinii
+	################################################################################
+	################################################################################
+	############                       MODULE I3                        ############
+	################################################################################
+	################################################################################
+	
+	[module/i3]
+	;https://github.com/jaagr/polybar/wiki/Module:-i3
+	type = internal/i3
+	
+	; Only show workspaces defined on the same output as the bar
+	;
+	; Useful if you want to show monitor specific workspaces
+	; on different bars
+	;
+	; Default: false
+	pin-workspaces = true
+	
+	; This will split the workspace name on ':'
+	; Default: false
+	strip-wsnumbers = false
+	
+	; Sort the workspaces by index instead of the default
+	; sorting that groups the workspaces by output
+	; Default: false
+	index-sort = false
+	
+	; Create click handler used to focus workspace
+	; Default: true
+	enable-click = true
+	
+	; Create scroll handlers used to cycle workspaces
+	; Default: true
+	enable-scroll = true
+	
+	; Wrap around when reaching the first/last workspace
+	; Default: true
+	wrapping-scroll = false
+	
+	; Set the scroll cycle direction
+	; Default: true
+	reverse-scroll = false
+	
+	; Use fuzzy (partial) matching on labels when assigning
+	; icons to workspaces
+	; Example: code;♚ will apply the icon to all workspaces
+	; containing 'code' in the label
+	; Default: false
+	fuzzy-match = false
+	
+	;extra icons to choose from
+	;http://fontawesome.io/cheatsheet/
+	;       v     
+	
+	ws-icon-0 = 1;
+	ws-icon-1 = 2;
+	ws-icon-2 = 3;
+	ws-icon-3 = 4;
+	ws-icon-4 = 5;
+	ws-icon-5 = 6;
+	ws-icon-6 = 7;
+	ws-icon-7 = 8;
+	ws-icon-8 = 9;
+	ws-icon-9 = 10;
+	ws-icon-default = " "
+	
+	; Available tags:
+	;   <label-state> (default) - gets replaced with <label-(focused|unfocused|visible|urgent)>
+	;   <label-mode> (default)
+	format = <label-state> <label-mode>
+	
+	label-mode = %mode%
+	label-mode-padding = 2
+	label-mode-foreground = #000000
+	label-mode-background = #FFBB00
+	
+	; Available tokens:
+	;   %name%
+	;   %icon%
+	;   %index%
+	;   %output%
+	; Default: %icon%  %name%
+	; focused = Active workspace on focused monitor
+	label-focused = %icon% %name%
+	label-focused-background = ${colors.background}
+	label-focused-foreground = ${colors.foreground}
+	label-focused-underline = #AD69AF
+	label-focused-padding = 2
+	
+	; Available tokens:
+	;   %name%
+	;   %icon%
+	;   %index%
+	; Default: %icon%  %name%
+	; unfocused = Inactive workspace on any monitor
+	label-unfocused = %icon% %name%
+	label-unfocused-padding = 2
+	label-unfocused-background = ${colors.background}
+	label-unfocused-foreground = ${colors.foreground}
+	label-unfocused-underline =
+	
+	; visible = Active workspace on unfocused monitor
+	label-visible = %icon% %name%
+	label-visible-background = ${self.label-focused-background}
+	label-visible-underline = ${self.label-focused-underline}
+	label-visible-padding = 2
+	
+	; Available tokens:
+	;   %name%
+	;   %icon%
+	;   %index%
+	; Default: %icon%  %name%
+	; urgent = Workspace with urgency hint set
+	label-urgent = %icon% %name%
+	label-urgent-background = ${self.label-focused-background}
+	label-urgent-foreground = #db104e
+	label-urgent-padding = 2
+	
+	format-foreground = ${colors.foreground}
+	format-background = ${colors.background}
+	
+	
+1c5fcba649fa5d887bfd11bb1fb97cdd|file:///home/satian/.config/dunst/dunstrc|75|1|v|cfg
+	[urgency_low]
+	    # IMPORTANT: colors have to be defined in quotation marks.
+	    # Otherwise the "#" and following would be interpreted as a comment.
+	    background = "#282828"
+	    foreground = "#928374"
+	    timeout = 5
+	    # Icon for notifications with low urgency, uncomment to enable
+	    #icon = /path/to/icon
+	
+	[urgency_normal]
+	    background = "#458588"
+	    foreground = "#ebdbb2"
+	    timeout = 5
+	
+	[urgency_critical]
+	    background = "#cc2421"
+	    foreground = "#ebdbb2"
+	    frame_color = "#fabd2f"
+	    timeout = 0
+	
+	
+50e55fea65d48b996171cb0e6d39e6ce|file:///home/satian/.config/dunst/dunstrc|75|1|v|cfg
+	[urgency_low]
+	    # IMPORTANT: colors have to be defined in quotation marks.
+	    # Otherwise the "#" and following would be interpreted as a comment.
+	    background = "#282828"
+	    foreground = "#928374"
+	    timeout = 5
+	    # Icon for notifications with low urgency, uncomment to enable
+	    #icon = /path/to/icon
+	
+	[urgency_normal]
+	    background = "#458588"
+	    foreground = "#ebdbb2"
+	    timeout = 5
+	
+	[urgency_critical]
+	    background = "#cc2421"
+	    foreground = "#ebdbb2"
+	    frame_color = "#fabd2f"
+	    timeout = 0
+	
+bc584bc69f99f6eaae91e26da7f10d47|file:///home/satian/.config/polybar/config|829|2|v|dosinii
+	https://github.com/NicholasFeldman/dotfiles/blob/master/polybar/.config/polybar/spotify.sh
+53793fc3f8652da24d5883bd57cc8f69|file:///home/satian/.config/polybar/config|828|1|v|dosinii
+	[module/spotify1]
+	;https://github.com/NicholasFeldman/dotfiles/blob/master/polybar/.config/polybar/spotify.sh
+	type = custom/script
+	exec = ~/.config/polybar/scripts/spotify.sh
+	interval = 1
+	
+	;format = <label>
+	format-foreground = ${colors.foreground}
+	format-background = ${colors.background}
+	format-padding = 2
+	format-underline = #0f0
+	format-prefix = "  "
+	format-prefix-foreground = #0f0
+	label = %output:0:150%
+	
+	################################################################################
+	
+	
+71756f096ce5c13251b9947c523e5cb2|file:///home/satian/.config/polybar/config|246|1|v|dosinii
+	################################################################################
+	###############################################################################
+	############                       MODULES A-Z                      ############
+	################################################################################
+	################################################################################
+	
+	
+b8becd52df3c8a737d1c53821cfbe489|file:///home/satian/.config/polybar/config|236|22|v|dosinii
+	#8d62a9
+	
+123a8b4d5553a7af499510320d219f03|file:///home/satian/.config/polybar/config|244|22|v|dosinii
+	#668bd7
+	
+e2c06ec4a53124c04247ffcf61ce0b1b|file:///home/satian/.config/polybar/config|131|17|v|dosinii
+	 potify previous playpause next
+e67489b6dbfb9829bce4b2eb2828200b|file:///home/satian/.config/polybar/config|247|1|v|dosinii
+	################################################################################
+	###############################################################################
+	############                       Spotify Modules                 ############
+	################################################################################
+	################################################################################
+	
+	[module/previous]
+	type = custom/script
+	interval = 86400
+	format = "%{T3}<label>"
+	format-padding = 5
+	; Previous song icon
+	exec = echo ""
+	; Check if spotify is running before displaying the icon
+	exec-if = "pgrep spotify"
+	format-underline = #8d62a9
+	
+	line-size = 1
+	click-left = "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous"
+	
+	[module/next]
+	type = custom/script
+	interval = 86400
+	format = "%{T3}<label>"
+	format-padding = 5
+	; Next song icon
+	exec = echo ""
+	; Check if spotify is running before displaying the icon
+	exec-if = "pgrep spotify"
+	format-underline = #8d62a9
+	
+	line-size = 1
+	click-left = "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next"
+	
+	[module/playpause]
+	type = custom/ipc
+	; Default
+	hook-0 = echo ""
+	; Playing
+	hook-1 = echo ""
+	; Paused
+	hook-2 = echo ""
+	initial = 1
+	format-underline = #8d62a9
+	
+	line-size = 1
+	click-left = "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause"
+	
+	[module/spotify]
+	type = custom/ipc
+	hook-0 = echo ""
+	hook-1 = python3 ~/.config/polybar/scripts/spotify/spotify_status.py
+	initial = 1
+	format-padding = 4
+	format-underline = #668bd7
+	
+	line-size = 1
+	; [i3wm only] - Uncomment the below line to focus on Spotify when clicking on the song name (credits to https://github.com/Esya)
+	;
+14ad2893414f2ec72dcd8d6522e01424|file:///home/satian/.config/polybar/config|247|1|V|dosinii
+	 click-left = i3-msg '[class="Spotify"] focus'
+ab56f4cbf94b9da282971cd49ec568c0|file:///home/satian/.config/polybar/config|252|1|v|dosinii
+	[module/player-mpris-tail]
+	type = custom/script
+	exec = ~/.config/polybar/scripts/player-mpris-tail.py -f '{icon} {:artist:t18:{artist}:}{:artist: - :}{:t20:{title}:}  %{A1:~/polybar-scripts/player-mpris-tail.py previous:} ⏮ %{A} %{A1:~/polybar-scripts/player-mpris-tail.py play-pause:} {icon-reversed} %{A} %{A1:~/polybar-scripts/player-mpris-tail.py next:} ⏭ %{A}'
+	tail = true
+	
+a8dfcdaab04b2fdd542950a74fba4b01|file:///home/satian/.config/polybar/config|252|1|v|dosinii
+	[module/player-mpris-tail]
+	type = custom/script
+	exec = ~/.config/polybar/scripts/player-mpris-tail.py -f '{icon} {:artist:t5:{artist}:}{:artist: - :}{:t4:{title}:}'
+	tail = true
+	click-left = ~/.config/polybar/scripts/player-mpris-tail.py previous &
+	click-right = ~/.config/polybar/scripts/player-mpris-tail.py next &
+	c
+4faecf757a25f4e4763b41fda3b9442e|file:///home/satian/.config/polybar/config|252|1|V|dosinii
+	lick-middle = ~/.config/polybar/scripts/player-mpris-tail.py play-pause &
+c37e685c9b7944f4056bd0c5136c6a70|file:///home/satian/.config/polybar/config|242|1|v|dosinii
+	content-font = 2
+	content-foreground = #8b62a9
+	content-background = #668bd7
+	
+1b1e261aecb5bce05fbf3212f55595aa|file:///home/satian/.config/polybar/config|209|1|v|dosinii
+	format-foreground = ${colors.foreground}
+	format-background = ${colors.background}
+	
+e8ed93aff3bdc5614073a51e17cf05ce|file:///home/satian/.config/polybar/config|257|1|v|dosinii
+	content-foreground = #8b62a9
+	content-background = #668bd7
+	
+88184c3eca25d1b3cdee81c99b72fb15|file:///home/satian/.config/fontconfig/fonts.conf|1|1|v|xml
+	<?xml version="1.0" encoding="UTF-8"?>
+	<!DOCTYPE fontconfig SYSTEM "fonts.dtd">
+	<fontconfig>
+		<alias>
+			<family>serif</family>
+			<prefer>
+				<family>DejaVu Serif</family>
+			</prefer>
+		</alias>
+		<alias>
+			<family>sans-serif</family>
+			<prefer>
+				<family>DejaVu Sans</family>
+			</prefer>
+		</alias>
+		<alias>
+			<family>sans</family>
+			<prefer>
+				<family>DejaVu Sans</family>
+			</prefer>
+		</alias>
+		<alias>
+			<family>monospace</family>
+			<prefer>
+				<family>DejaVu Sans Mono</family>
+			</prefer>
+		</alias>
+		<alias>
+			<family>Monospace</family>
+			<prefer>
+				<family>DejaVu Sans Mono</family>
+			</prefer>
+		</alias>
+		<alias>
+			<family>mono</family>
+			<prefer>
+				<family>DejaVu Sans Mono</family>
+			</prefer>
+		</alias>
+	</fontconfig>
+ed03632bffbf4742ab7e8aff3cfb9d51|file:///home/satian/.config/polybar/config|1|1|v|dosinii
+	#  ____ _____ 
+	# |  _ \_   _|  Derek Taylor (DistroTube)
+	# | | | || |    http://www.youtube.com/c/DistroTube
+	# | |_| || |    http://www.gitlab.com/dwt1/ 
+	# |____/ |_|  	
+	
+	;=====================================================
+	;
+	; To learn more about how to configure Polybar
+	; go to https://github.com/jaagr/polybar
+	;
+	; The README contains alot of information
+	; Themes : https://github.com/jaagr/dots/tree/master/.local/etc/themer/themes
+	; https://github.com/jaagr/polybar/wiki/
+	; https://github.com/jaagr/polybar/wiki/Configuration
+	; https://github.com/jaagr/polybar/wiki/Formatting
+	;
+	;=====================================================
+	
+	
+92f9f598c23f7cf995d1f50b6640ab8f|file:///home/satian/.config/polybar/config|276|28|v|dosinii
+	#7D49B6
+	
+4b78d7f3565cc8d70ff39e8a700f3892|file:///home/satian/.config/polybar/launch.sh|1|1|v|sh
+	#!/usr/bin/env bash
+	
+	# Terminate already running bar instances
+	killall -q polybar
+	# If all your bars have ipc enabled, you can also use 
+	# polybar-msg cmd quit
+	
+	# Launch bar1 and bar2
+	polybar mainbar-bspwm &
+	
+	echo "Bars launched..."
+bbf50205b06d5a897cff15bbb69af54c|file:///home/satian/.config/bspwm/bspwmrc|51|1|v|sh
+	xdo below -t $(xdo id -n root) $(xdo id -a polybar-main_eDP1)
+	x
+6f0ea7a5f8805c82a30ffe76aead27da|file:///home/satian/.config/bspwm/bspwmrc|51|1|V|sh
+	do below -t $(xdo id -n root) $(xdo id -a polybar-main_HDMI2)
+ce006d3205e09065b17e56bf557b187d|file:///home/satian/.config/bspwm/bspwmrc|50|1|V|sh
+	# find out the name fo your monitor with xrandr
+	
+177d7a07f9c5f1abcb44c831077ddb9d|file:///home/satian/.config/polybar/launch.sh|9|1|v|sh
+	for m in $(polybar --list-monitors | cut -d":" -f1); do
+		WIRELESS=$(ls /sys/class/net/ | grep ^wl | awk 'NR==1{print $1}') MONITOR=$m polybar --reload mainbar-bspwm &
+	done
+	
+	
+7027d59510295a55474cd0e063454f18|file:///home/satian/.config/polybar/config|70|1|v|dosinii
+	[bar/mainbar-bspwm]
+	;monitor = ${env:MONITOR}
+	;monitor-fallback = HDMI1
+	width = 100%
+	height = 20
+	;offset-x = 1%
+	;offset-y = 1%
+	radius = 0.0
+	fixed-center = true
+	bottom = false
+	separator = 
+	
+	background = ${colors.background}
+	foreground = ${colors.foreground}
+	
+	line-size = 2
+	line-color = #f00
+	
+	wm-restack = bspwm
+	override-redirect = true
+	
+	; Enable support for inter-process messaging
+	; See the Messaging wiki page for more details.
+	enable-ipc = true
+	
+	border-size = 0
+	;border-left-size = 0
+	;border-right-size = 25
+	;border-top-size = 0
+	;border-bottom-size = 25
+	border-color = #00000000
+	
+	padding-left = 1
+	padding-right = 1
+	
+	module-margin-left = 0
+	module-margin-right = 0
+	
+	;https://github.com/jaagr/polybar/wiki/Fonts
+	font-0 = "UbuntuMono Nerd Font:size=10;2"
+	font-1 = "UbuntuMono Nerd Font:size=16;3"
+	font-2 = "FontAwesome 5 Free:style=Regular:pixelsize=8;1"
+	font-3 = "FontAwesome 5 Free:style=Solid:pixelsize=8;1"
+	font-4 = "FontAwesome 5 Brands:pixelsize=8;1"
+	font-5 = "unifont:fontformat=truetype:sized=8;1"
+	modules-left = bspwm xwindow
+	modules-center = player-mpris-tail
+	modules-right = arrow1 networkspeedup networkspeeddown arrow2 memory2 arrow3 cpu2 arrow2 pavolume arrow3 arch-aur-updates arrow2 date
+	
+	tray-detached = false
+	tray-offset-x = 0
+	tray-offset-y = 0
+	tray-position = right
+	tray-padding = 2
+	tray-maxsize = 20
+	tray-scale = 1.0
+	tray-background = ${colors.background}
+	
+	scroll-up = bspwm-desknext
+	scroll-down = bspwm-deskprev
+	
+ecb4fbcd413062c2b3649b6ddf9d933a|file:///home/satian/.config/polybar/launch.sh|9|1|v|sh
+	if type "xrandr"; then
+	    for m in $(xrandr --query | grep " connected" | cut -d" " -f1); do
+	        MONITOR=$m polybar --reload mainbar-bspwm &
+	    done
+	else
+	    polybar --reload mainbar-bspwm &
+	fi
+	
+	
+c741a4d2235df84e0a70c8f4be4e8a91|file:///home/satian/.config/polybar/config|64|1|v|dosinii
+	################################################################################
+	################################################################################
+	############                  MAINBAR-BSPWM                         ############
+	################################################################################
+	################################################################################
+	
+	
+f090b2eeee9941778c9f21829038ae85|file:///home/satian/.config/polybar/config|220|1|v|dosinii
+	ws-icon-5 = 5;5
+afbc691aa2a9582ab8b17622d847e31c|file:///home/satian/.config/polybar/config|216|1|V|dosinii
+	ws-icon-1 = 1;
+	ws-icon-2 = 2;2
+1b2b183c607139a2a7a175e1c8588f21|file:///home/satian/.config/polybar/config|217|1|V|dosinii
+	ws-icon-2 = 2;
+	ws-icon-3 = 3;3
+99a861188a6e825d897a66acac1fa86c|file:///home/satian/.config/polybar/config|224|1|V|dosinii
+	ws-icon-5 = 9;
+	ws-icon-0 = 0;
+a17ec48d93113f73a16fc4da1a329774|file:///home/satian/.config/aliasrc|7|1|V|sh
+	alias dotfiles='/usr/bin/git --git-dir=$HOME/.config/ --work-tree=$HOME'

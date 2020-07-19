@@ -1,0 +1,24 @@
+{
+   "background": {
+      "scripts": [ "app/vendor.js", "app/background.js" ]
+   },
+   "browser_action": {
+      "default_icon": "icons/icon.png",
+      "default_popup": "app/popup.html"
+   },
+   "content_scripts": [  ],
+   "description": "A Dark theme for all of GitHub based on Atom One Dark.",
+   "icons": {
+      "128": "icons/icon128.png",
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwyf90AqKN/jtisYhwintU6NYPzKon749ivHqmg1mASXEJb/1jmiYk93JuduBrhw6CgRb2m6HBrnUSiG0kfiEzzE5kNP7qO02RrTvGcB2cqQAqo4IwoqEhrtNgD39lGfSIDGuIcaHGOaY/lgGF8pSUdwyVhirWhG1D5TiS01LIb15cMakmibYddytpsbZRne14AHnXCZ7QP/aITFN0CBqzUrCGkLO/y0siqqugIYO3E1NqAQlsFv/TptcAvccDDjINlpOWb6IlzIDuKjOtoB072kkD/pwJkI7XSGz2KkHMgNsPLhQ3t+H87TUyVp4yhHTOFDRWM0K8pbbIIDMjmuJ1wIDAQAB",
+   "manifest_version": 2,
+   "name": "GitHub Dark Theme",
+   "optional_permissions": [  ],
+   "permissions": [ "storage", "\u003Call_urls>" ],
+   "short_name": "GitHub Dark Theme",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.1.6"
+}

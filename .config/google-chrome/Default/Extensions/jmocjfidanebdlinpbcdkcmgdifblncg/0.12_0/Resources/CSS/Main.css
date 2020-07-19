@@ -1,0 +1,91 @@
+body {
+	color: rgb(255, 0, 0);
+	font: 11px 'Lucida Grande','Helvetica Neue',Helvetica,Arial,sans-serif;
+	overflow: auto;
+	min-width: 200px;
+	background-color:#E6E6FA;
+}
+/*
+ * Remove blue outline that Chrome makes when autoselecting the first link
+ */
+*:focus
+{
+	outline: none;
+}
+table {
+	margin-left: -4px;
+	border-collapse: collapse;
+	border-spacing: 10;
+	width: 500px;
+}
+/*
+ * Shadows are visible under slightly transparent text color
+ */
+h1 {
+	color: rgba(100,100,100,0.80);
+	font-size: 12px;
+	font-weight: bold;
+	margin-bottom: 4px;
+	text-align: left;
+	text-shadow: 1px 1px 1px white, 0 0 0 black, 1px 1px 1px white;
+	white-space: nowrap;
+}
+
+/*
+ * Don't show shadows when selecting text
+ */
+td::selection {
+	text-shadow: none;
+	color:#f7f7f7;
+	background-color: #ff9640;
+}
+table,
+td,
+td:hover,
+tr,
+tr:hover {
+	background: transparent none;
+	border: 0;
+	color: rgb(50, 50, 50);
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	text-shadow: none;
+	text-transform: none;
+	vertical-align: top;
+	visibility: visible;
+	white-space: nowrap;
+}
+td,
+td:hover {
+	padding: 1px 4px 1px 0;
+	max-width: 400px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow-x: hidden;
+	word-break:break-all;
+	border: 1px solid black;
+}
+
+table#soastatus{
+        font-family: Tahoma, Geneva, sans-serif;
+        font-size: 12px;
+        color: 00AAFF;
+        margin-left: 5px;
+        background-color:#AAFF00 ;
+        -moz-border-radius: 1px;
+        -webkit-border-radius: 1px;
+        border-radius: 1px;
+		word-break:break-all;
+		border: 5px solid lightblue
+}
+div#wrapping{
+	white-space: -moz-pre-wrap; /* Mozilla */
+white-space: -hp-pre-wrap; /* HP printers */
+white-space: -o-pre-wrap; /* Opera 7 */
+white-space: -pre-wrap; /* Opera 4-6 */
+white-space: pre-wrap; /* CSS 2.1 */
+white-space: pre-line; /* CSS 3 (and 2.1 as well, actually) */
+word-wrap: break-word; /* IE */
+word-break: break-all;
+}

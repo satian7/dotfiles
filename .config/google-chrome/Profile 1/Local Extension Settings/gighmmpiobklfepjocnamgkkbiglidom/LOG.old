@@ -1,0 +1,49 @@
+2020/07/19-12:11:51.894 957 Reusing MANIFEST /home/satian/.config/google-chrome/Profile 1/Local Extension Settings/gighmmpiobklfepjocnamgkkbiglidom/MANIFEST-000001
+2020/07/19-12:11:51.895 957 Recovering log #182
+2020/07/19-12:11:51.896 957 Reusing old log /home/satian/.config/google-chrome/Profile 1/Local Extension Settings/gighmmpiobklfepjocnamgkkbiglidom/000182.log 
+2020/07/19-12:12:54.072 796 Level-0 table #186: started
+2020/07/19-12:12:54.172 796 Level-0 table #186: 5375002 bytes OK
+2020/07/19-12:12:54.177 796 Delete type=0 #182
+2020/07/19-12:12:54.184 796 Compacting 4@0 + 2@1 files
+2020/07/19-12:12:54.312 796 Generated table #187@0: 1 keys, 5374427 bytes
+2020/07/19-12:12:54.320 796 Generated table #188@0: 4 keys, 351 bytes
+2020/07/19-12:12:54.320 796 Compacted 4@0 + 2@1 files => 5374778 bytes
+2020/07/19-12:12:54.323 796 compacted to: files[ 0 2 1 0 0 0 0 ]
+2020/07/19-12:12:54.324 796 Delete type=2 #181
+2020/07/19-12:12:54.324 796 Delete type=2 #176
+2020/07/19-12:12:54.324 796 Delete type=2 #178
+2020/07/19-12:12:54.324 796 Delete type=2 #175
+2020/07/19-12:12:54.324 796 Delete type=2 #186
+2020/07/19-12:12:54.324 796 Delete type=2 #183
+2020/07/19-12:14:07.293 796 Level-0 table #190: started
+2020/07/19-12:14:07.374 796 Level-0 table #190: 5374602 bytes OK
+2020/07/19-12:14:07.380 796 Delete type=0 #185
+2020/07/19-13:12:54.308 796 Level-0 table #192: started
+2020/07/19-13:12:54.372 796 Level-0 table #192: 5374627 bytes OK
+2020/07/19-13:12:54.377 796 Delete type=0 #189
+2020/07/19-13:23:49.977 796 Level-0 table #194: started
+2020/07/19-13:23:50.043 796 Level-0 table #194: 5374411 bytes OK
+2020/07/19-13:23:50.049 796 Delete type=0 #191
+2020/07/19-14:12:53.092 796 Level-0 table #196: started
+2020/07/19-14:12:53.168 796 Level-0 table #196: 5375254 bytes OK
+2020/07/19-14:12:53.172 796 Delete type=0 #193
+2020/07/19-14:12:53.174 796 Compacting 4@0 + 2@1 files
+2020/07/19-14:12:53.277 796 Generated table #197@0: 1 keys, 5374410 bytes
+2020/07/19-14:12:53.280 796 Generated table #198@0: 4 keys, 352 bytes
+2020/07/19-14:12:53.280 796 Compacted 4@0 + 2@1 files => 5374762 bytes
+2020/07/19-14:12:53.285 796 compacted to: files[ 0 2 1 0 0 0 0 ]
+2020/07/19-14:12:53.285 796 Delete type=2 #196
+2020/07/19-14:12:53.285 796 Delete type=2 #187
+2020/07/19-14:12:53.285 796 Delete type=2 #188
+2020/07/19-14:12:53.285 796 Delete type=2 #190
+2020/07/19-14:12:53.285 796 Delete type=2 #192
+2020/07/19-14:12:53.285 796 Delete type=2 #194
+2020/07/19-14:13:54.153 796 Level-0 table #200: started
+2020/07/19-14:13:54.225 796 Level-0 table #200: 5374612 bytes OK
+2020/07/19-14:13:54.230 796 Delete type=0 #195
+2020/07/19-15:12:54.390 796 Level-0 table #202: started
+2020/07/19-15:12:54.457 796 Level-0 table #202: 5374662 bytes OK
+2020/07/19-15:12:54.461 796 Delete type=0 #199
+2020/07/19-15:28:39.425 796 Level-0 table #204: started
+2020/07/19-15:28:39.505 796 Level-0 table #204: 5374424 bytes OK
+2020/07/19-15:28:39.510 796 Delete type=0 #201

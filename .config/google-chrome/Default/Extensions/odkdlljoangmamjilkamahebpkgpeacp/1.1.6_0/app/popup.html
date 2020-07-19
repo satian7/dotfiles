@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>GitHub Dark Theme</title>
+        <link rel="stylesheet" type="text/css" href="bulma.css" />
+        <link rel="stylesheet" type="text/css" href="bulma-extensions.css" />
+        <style>
+            body {
+                width: 450px;
+            }
+        </style>
+    </head>
+    <body ng-app="app">
+        <div ng-controller="popupController as ctrl">
+            <section class="section" ng-if="ctrl.hasPermissions">
+                <div class="container is-fluid">
+                    <h1 class="title">GitHub Dark Theme</h1>
+                    <p class="subtitle">
+                        change appearance of <strong class="has-text-primary">your domain</strong> into a dark theme!
+                    </p>
+                    <table class="table narrower is-bordered is-fullwidth is-hoverable">
+                        <thead>
+                            <tr>
+                                <th class="">Included Domain</th>
+                                <th class="has-text-centered">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="domain in ctrl.domainList track by $index">
+                                <td><a ng-click="ctrl.navigate(domain)">{{ domain }}</a></td>
+                                <td>
+                                    <button
+                                        class="button is-small is-fullwidth is-danger"
+                                        ng-click="ctrl.remove(domain)"
+                                    >
+                                        Remove
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input
+                                        class="input is-small"
+                                        type="text"
+                                        placeholder="add your domain..."
+                                        ng-model="ctrl.yourDomain"
+                                    />
+                                </td>
+                                <td>
+                                    <button class="button is-small is-fullwidth is-primary" ng-click="ctrl.add()">
+                                        Add
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table narrower is-bordered is-fullwidth is-hoverable">
+                        <thead>
+                            <tr>
+                                <th class="">Excluded Domain</th>
+                                <th class="has-text-centered">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="excludedUrl in ctrl.excludedUrlList track by $index">
+                                <td><a ng-click="ctrl.navigate(excludedUrl)">{{ excludedUrl }}</a></td>
+                                <td>
+                                    <button
+                                        class="button is-small is-fullwidth is-danger"
+                                        ng-click="ctrl.removeExcludedUrl(excludedUrl)"
+                                    >
+                                        Remove
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input
+                                        class="input is-small"
+                                        type="text"
+                                        placeholder="add your domain..."
+                                        ng-model="ctrl.yourExcludedDomain"
+                                    />
+                                </td>
+                                <td>
+                                    <button class="button is-small is-fullwidth is-primary" ng-click="ctrl.addExcludedUrl()">
+                                        Add
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- <div class="field" ng-click="ctrl.toggleDarkTheme(!ctrl.useDarkTheme)">
+                        <input
+                            ng-model="ctrl.useDarkTheme"
+                            type="checkbox"
+                            class="switch is-rounded"
+                        />
+                        <label for="switchRoundedDefault">Enabled Dark Theme{{ctrl.useDarkTheme}}</label>
+                    </div> -->
+                    <div class="message is-warning">
+                        <div class="message-body">
+                            <p>
+                                Something goes wrong?
+                            </p>
+                            <p>
+                                <button class="button is-small is-warning" ng-click="ctrl.reset()">Reset</button> domain
+                                list or
+                                <a
+                                    target="_blank"
+                                    href="https://github.com/poychang/github-dark-theme/issues"
+                                    class="has-text-dark"
+                                    >submit issues</a
+                                >.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section" ng-if="!ctrl.hasPermissions">
+                <div class="message">
+                    <div class="message-body">
+                        <p>
+                            This feature needs "Storage" and "Tabs" permissions to enable.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <script type="application/javascript" src="vendor.js"></script>
+        <script type="application/javascript" src="popup.js"></script>
+    </body>
+</html>

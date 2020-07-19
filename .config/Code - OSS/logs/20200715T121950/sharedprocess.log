@@ -1,0 +1,2 @@
+[2020-07-15 12:19:53.483] [sharedprocess] [info] main {"machineId":"be5f9401adb727a191003c1b7fba0e2f36814abeea72781535da081784377f01","windowId":2}
+[2020-07-15 12:19:53.500] [sharedprocess] [error] [File Watcher (node.js)] Error: ENOENT: no such file or directory, stat '/home/satian/.config/Code - OSS/User/snippets'

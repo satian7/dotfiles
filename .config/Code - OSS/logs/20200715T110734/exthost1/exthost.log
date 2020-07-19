@@ -1,0 +1,24 @@
+[2020-07-15 11:07:36.714] [exthost] [info] extension host started
+[2020-07-15 11:07:36.731] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch {"startup":true,"extensionId":{"value":"vscode.debug-auto-launch","_lower":"vscode.debug-auto-launch"},"activationEvent":"*"}
+[2020-07-15 11:07:36.732] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/lib/code/extensions/debug-auto-launch/dist/extension
+[2020-07-15 11:07:36.734] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet {"startup":true,"extensionId":{"value":"vscode.emmet","_lower":"vscode.emmet"},"activationEvent":"*"}
+[2020-07-15 11:07:36.734] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/lib/code/extensions/emmet/dist/extension
+[2020-07-15 11:07:36.743] [exthost] [info] ExtensionService#_doActivateExtension vscode.git {"startup":true,"extensionId":{"value":"vscode.github","_lower":"vscode.github"},"activationEvent":"*"}
+[2020-07-15 11:07:36.743] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/lib/code/extensions/git/dist/main
+[2020-07-15 11:07:36.758] [exthost] [info] ExtensionService#_doActivateExtension vscode.github-authentication {"startup":true,"extensionId":{"value":"vscode.github-authentication","_lower":"vscode.github-authentication"},"activationEvent":"*"}
+[2020-07-15 11:07:36.758] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/lib/code/extensions/github-authentication/dist/extension.js
+[2020-07-15 11:07:36.762] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict {"startup":true,"extensionId":{"value":"vscode.merge-conflict","_lower":"vscode.merge-conflict"},"activationEvent":"*"}
+[2020-07-15 11:07:36.762] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/lib/code/extensions/merge-conflict/dist/mergeConflictMain
+[2020-07-15 11:07:36.764] [exthost] [info] ExtensionService#_doActivateExtension vscode.microsoft-authentication {"startup":true,"extensionId":{"value":"vscode.microsoft-authentication","_lower":"vscode.microsoft-authentication"},"activationEvent":"*"}
+[2020-07-15 11:07:36.764] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/lib/code/extensions/microsoft-authentication/dist/extension.js
+[2020-07-15 11:07:36.768] [exthost] [info] ExtensionService#_doActivateExtension vscode.search-result {"startup":true,"extensionId":{"value":"vscode.search-result","_lower":"vscode.search-result"},"activationEvent":"*"}
+[2020-07-15 11:07:36.768] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/lib/code/extensions/search-result/dist/extension.js
+[2020-07-15 11:07:36.769] [exthost] [info] ExtensionService#_doActivateExtension CoenraadS.bracket-pair-colorizer-2 {"startup":true,"extensionId":{"value":"CoenraadS.bracket-pair-colorizer-2","_lower":"coenraads.bracket-pair-colorizer-2"},"activationEvent":"*"}
+[2020-07-15 11:07:36.769] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/satian/.vscode-oss/extensions/coenraads.bracket-pair-colorizer-2-0.2.0/out/src/extension
+[2020-07-15 11:07:36.783] [exthost] [info] ExtensionService#_doActivateExtension eamodio.gitlens {"startup":true,"extensionId":{"value":"eamodio.gitlens","_lower":"eamodio.gitlens"},"activationEvent":"*"}
+[2020-07-15 11:07:36.783] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/satian/.vscode-oss/extensions/eamodio.gitlens-10.2.2/dist/extension
+[2020-07-15 11:07:36.806] [exthost] [info] ExtensionService#_doActivateExtension SirTori.indenticator {"startup":true,"extensionId":{"value":"SirTori.indenticator","_lower":"sirtori.indenticator"},"activationEvent":"*"}
+[2020-07-15 11:07:36.806] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/satian/.vscode-oss/extensions/sirtori.indenticator-0.6.0/out/src/extension
+[2020-07-15 11:07:37.044] [exthost] [info] ExtensionService#_doActivateExtension vscode.github {"startup":true,"extensionId":{"value":"vscode.github","_lower":"vscode.github"},"activationEvent":"*"}
+[2020-07-15 11:07:37.045] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/lib/code/extensions/github/dist/extension.js
+[2020-07-15 11:07:37.114] [exthost] [info] eager extensions activated

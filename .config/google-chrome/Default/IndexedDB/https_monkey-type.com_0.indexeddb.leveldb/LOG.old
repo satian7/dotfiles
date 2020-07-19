@@ -1,0 +1,15 @@
+2020/07/18-19:51:13.089 22e8 Reusing MANIFEST /home/satian/.config/google-chrome/Default/IndexedDB/https_monkey-type.com_0.indexeddb.leveldb/MANIFEST-000001
+2020/07/18-19:51:13.090 22e8 Recovering log #19
+2020/07/18-19:51:13.090 22e8 Reusing old log /home/satian/.config/google-chrome/Default/IndexedDB/https_monkey-type.com_0.indexeddb.leveldb/000019.log 
+2020/07/18-19:52:24.946 2368 Level-0 table #24: started
+2020/07/18-19:52:24.951 2368 Level-0 table #24: 10037 bytes OK
+2020/07/18-19:52:24.956 2368 Delete type=0 #19
+2020/07/18-19:52:24.956 2368 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2020/07/18-19:52:24.956 2368 Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x02\x01\x02\x013\x00[\x00D\x00E\x00F\x00A\x00U\x00L\x00T\x00]\x00!\x001\x00:\x007\x008\x009\x007\x008\x008\x004\x007\x001\x001\x004\x000\x00:\x00w\x00e\x00b\x00:\x007\x00e\x003\x001\x00b\x001\x005\x009\x005\x009\x00d\x006\x008\x00a\x00c\x000\x00a\x005\x001\x004\x007\x001' @ 514 : 1
+2020/07/18-19:52:24.956 2368 Compacting 1@1 + 1@2 files
+2020/07/18-19:52:24.958 2368 Generated table #25@1: 35 keys, 3316 bytes
+2020/07/18-19:52:24.958 2368 Compacted 1@1 + 1@2 files => 3316 bytes
+2020/07/18-19:52:24.962 2368 compacted to: files[ 0 0 1 0 0 0 0 ]
+2020/07/18-19:52:24.962 2368 Delete type=2 #21
+2020/07/18-19:52:24.962 2368 Delete type=2 #24
+2020/07/18-19:52:24.962 2368 Manual compaction at level-1 from '\x00\x02\x01\x02\x013\x00[\x00D\x00E\x00F\x00A\x00U\x00L\x00T\x00]\x00!\x001\x00:\x007\x008\x009\x007\x008\x008\x004\x007\x001\x001\x004\x000\x00:\x00w\x00e\x00b\x00:\x007\x00e\x003\x001\x00b\x001\x005\x009\x005\x009\x00d\x006\x008\x00a\x00c\x000\x00a\x005\x001\x004\x007\x001' @ 514 : 1 .. (end); will stop at (end)
